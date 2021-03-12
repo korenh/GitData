@@ -3,7 +3,6 @@ import Nav from './components/Nav';
 import Bio from './components/Bio';
 import Repo from './components/Repo';
 import Users from './components/Users';
-import Particles from "react-particles-js";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 export default function Main() {
@@ -17,10 +16,6 @@ export default function Main() {
 
   return (
     <div>
-        <Particles 
-          className="particles"
-          params={{particles:{number: {value: 100,density: {enable: true,value_area: 3000,},},},}}
-        />
         <div className='main'>
         <Router>
           <Nav/>
