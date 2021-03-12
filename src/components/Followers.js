@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react'
 
-export default function Users(props) {
+export default function Followers(props) {
 
     const [data , setData] = useState([])
 
@@ -11,13 +11,13 @@ export default function Users(props) {
     },[props.data]);
 
     return (
-        <div className='user-main'>
-             {data.map(v=>(
+        <div className='follow-main'>
+            {data.map(v=>(
                 <div key={v.id}>
                     <img src={v.avatar_url} alt='img'/>
                     <p >{v.login}</p>
                 </div>
-        ))}
+            ))}
         </div>
     )
 }
