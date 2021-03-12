@@ -4,7 +4,6 @@ import Bio from './components/Bio';
 import Repo from './components/Repo';
 import Followers from './components/Followers';
 import Following from './components/Following';
-
 import { BrowserRouter as Router, Route , Redirect } from "react-router-dom";
 
 export default function Main() {
@@ -12,9 +11,9 @@ export default function Main() {
   const [data , setData] = useState({})
   const [user , setuser ] = useState('korenh')
   
-    useEffect(() => {
-      fetch(`https://api.github.com/users/${user}`).then(response => response.json()).then(data => setData(data));
-    },[user]);
+  useEffect(() => {
+    fetch(`https://api.github.com/users/${user}`).then(response => response.json()).then(data => setData(data));
+  },[user]);
 
   return (
       <div className='main'>

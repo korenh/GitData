@@ -2,13 +2,13 @@ import React, { useEffect , useState } from 'react';
 
 export default function Repo(props) {
 
-    const [data , setData] = useState([])
+  const [data , setData] = useState([])
 
-    useEffect(() => {
-      fetch(props.data.repos_url)
-      .then(response => response.json())
-      .then(data => setData(data));
-    },[props.data]);
+  useEffect(() => {
+    fetch(props.data.repos_url)
+    .then(response => response.json())
+    .then(data => setData(data));
+  },[props.data]);
 
   return (
     <div className='repo-main'>
