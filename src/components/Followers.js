@@ -5,9 +5,7 @@ export default function Followers(props) {
     const [data , setData] = useState([])
 
     useEffect(() => {
-      fetch(props.data.followers_url)
-      .then(response => response.json())
-      .then(data => setData(data));
+      fetch(props.data.followers_url).then(res=>res.json()).then(data => setData(data));
     },[props.data]);
 
     return (

@@ -1,6 +1,6 @@
 # GitData
 
-<img src="./sample/example.png" height="300">
+<img src="./sample/sample.png" height="300">
 
 ## Dependencies
 ```bash
